@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Alura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div class="contenedorPadre">
+                     <img src="./assets/Frame 6.png" class="imageHead"> 
+                                         <div class="contenedorHijo1">
+                            <textarea class="textoIngresado" spellcheck="false" name="text" id="textoIngresado" cols="30" rows="10" style="text-transform: lowercase;" placeholder="Ingrese El Texto Aqui" 
+                            onkeypress="return ( (event.charCode == 32 ) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode >= 65 && event.charCode <= 90))" min="1" 
+                            ></textarea>         
+                        <div class="terminos">
+                            <p>solo letras minusculas y sin acentos</p>
+                        </div>              
+                        <div class="contenedorBotones">
+                            <button type="button" onclick="encriptarTexto()" id="botonEncriptarTexto" class="botonEncriptarTexto">Encriptar</button>
+                            <button type="button" onclick="desencriptarTexto()" id="botonDesencriptarTexto" class="botonDesencriptarTexto">Desencriptar</button>
+                        </div>
+                        </div>
+
+                        
+                       <div class="contenedorHijo2"> 
+                                    
+                                    <img src="./assets/Muñeco.png" class="imagenContenedor" id="imagenContenedor" alt="imagenContenedor">
+                                    <div class="mensajeTextoEncriptado" id="mensajeTextoEncriptado">
+                                    <h2 class="mensajeAgregado" id="mensajeAgregado">Ningun Mensaje Fue Encontrado!</h2>
+                                    <p class="mensajeAgregado2" id="mensajeAgregado2">Ingrese el texto que desee encriptar o desencriptar!</p>
+                                    
+                                     </div>
+                                     <textarea name="resultadoTexto"  id="resultadoTexto" cols="30" rows="10" class="resultadoTexto" readonly="readonly" hidden="hidden" ></textarea> 
+                                </div>
+                                <button type="button" onclick="copiarTexto()" class="botonCopiar" id="botonCopiarTexto" hidden="hidden" spellcheck="false">Copiar</button>
+                         </div>
+    
+    </body>
+    <footer class="pieDePagina"> 
+        <p>Este Programa Fue Realizado por <strong>Felipe Andres Zambrano Peralta</strong> </p>
+    </footer>
+        <script src="java.js"></script>
+</html>
